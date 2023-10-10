@@ -1,3 +1,5 @@
+$primary-color: #A7C957;
+
 .text-animate {
   display: inline-block;
   opacity: 0;
@@ -15,8 +17,15 @@
 
   &:hover {
     animation: rubberBand 1s;
-    color: #ffd700;
+    // color: $primary-color;
   }
+}
+
+.text-animate-color {
+  color: $primary-color;
+    transition-property: color;
+    transition-duration: 2s;
+
 }
 
 @for $i from 1 through 35 {

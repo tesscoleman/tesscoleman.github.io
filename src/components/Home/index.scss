@@ -1,5 +1,8 @@
-.home-page {
+$primary-color: #A7C957;
 
+.home-page {
+    animation: fadeIn 1s 1.8s forwards;
+    animation-delay: 1.4s;
     .text-zone {
         position: absolute;
         left: 10%;
@@ -10,9 +13,9 @@
     }
     h1 {
         color: #fff;
-        font-size: 53px;
+        font-size: 80px;
         margin: 0;
-        font-family: 'Coolvetica';
+        font-family: 'Eckmann';
         font-weight: 400;
 
         img {
@@ -30,14 +33,14 @@
         color: #8d8d8d;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 30px;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
 
     }
 
     .flat-button {
-        color: #ffd700;
+        color: $primary-color;
         font-size: 13px;
         font-weight: 400;
         letter-spacing: 4px;
@@ -51,7 +54,7 @@
         white-space: nowrap;
 
         &:hover {
-            background: #ffd700;
+            background: $primary-color;
             color: #333;
         }
 
