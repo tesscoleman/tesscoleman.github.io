@@ -1,18 +1,21 @@
-$primary-color: #a7c957;
+$primary-color: #9dce2a;
 
 
 .nav-bar {
   border: 1px solid;
-  border-right-color: #fff6;
+  border-bottom-color: #fff6;
   width: 100%;
   min-height: 100px;
   position: absolute;
   top: 0;
   z-index: 3;
   min-width: 500px;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   background: transparent;
-  transition: background-color 1s cubic-bezier(0.104, 0.204, 0.492, 1);
 
   &:hover {
     background-color: #fff;
@@ -44,16 +47,13 @@ $primary-color: #a7c957;
   }
 
   nav {
-    display: inline-flex;
+    
+    display: flex;
     height: 100%;
-    text-align: center;
-    justify-content: center;
-
     position: relative;
     height: 100%;
-    margin: 0 auto;
     max-width: 100%;
-    transition: background-color 1s cubic-bezier(0.104, 0.204, 0.492, 1);
+
     a {
       text-align: center;
       justify-content: center;
@@ -62,7 +62,8 @@ $primary-color: #a7c957;
 
       font-size: 22px;
       // color: #fff6;
-      color: rgb(85, 26, 139);
+      color: rgb(85, 26, 139, 0.8);
+
       position: relative;
       text-align: center;
       text-decoration: none;
