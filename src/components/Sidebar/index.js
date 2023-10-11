@@ -10,11 +10,11 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Sidebar = () => (
     <div className='nav-bar'>
         {/* react router dom Link to homepage*/}
-        <Link className='logo' to='/'>
+        {/* <Link className='logo' to='/'>
             <img src='' alt="logo" />
             <img className = 'sub-logo' src='' alt="" />
 
-        </Link>
+        </Link> */}
         <nav>
             <NavLink exact="true" activeclassname="active" to='/'>
                 <FontAwesomeIcon icon={faHome} />
