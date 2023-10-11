@@ -7,6 +7,7 @@ import About from './components/About'
 function App() {
   return (
     <>
+
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

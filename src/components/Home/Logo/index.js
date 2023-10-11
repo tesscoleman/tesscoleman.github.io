@@ -4,6 +4,8 @@ import { useRef } from 'react'
 import { useEffect } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+import { Gradient } from '../../Gradient/gradient'
+
 
 const Logo = () => {
   const bgRef = useRef()
@@ -35,7 +37,9 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img ref={solidLogoRef} className="solid-logo" src={LogoCat} alt="S" />
+      <canvas id="gradient-canvas" data-transition-in />
+
+      {/* <img ref={solidLogoRef} className="solid-logo" src={LogoCat} alt="S" /> */}
 {/* 
       <svg
         width="559pt"
