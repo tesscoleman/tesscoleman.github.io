@@ -1,166 +1,156 @@
-$primary-color: #A7C957;
+$primary-color: #a7c957;
+
 
 .nav-bar {
-    border: 1px solid;
-    border-right-color:  #fff6;
-    width: 100%;
-    min-height: 100px;
-    position: absolute;
-    top: 0;
-    z-index: 3;
-    min-width: 500px;
+  border: 1px solid;
+  border-right-color: #fff6;
+  width: 100%;
+  min-height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-width: 500px;
+  text-align: center;
+  background: transparent;
+  transition: background-color 1s cubic-bezier(0.104, 0.204, 0.492, 1);
+
+  &:hover {
+    background-color: #fff;
+    mix-blend-mode: difference;
+    transition: background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
+   // animation: slideInDown 1s ;
+  }
+
+  // transform: translateY(-100%);
+  .logo {
+    position: relative;
+    display: inline-flex;
+    margin: 20px 0;
+
+    // padding: 8px 0;
+
+    img {
+      top: 0;
+      left: 0;
+      display: inline-block;
+      margin: 8px auto;
+      width: 24px;
+      width: auto;
+
+      &.sub-logo {
+        width: 50px;
+      }
+    }
+  }
+
+  nav {
+    display: inline-flex;
+    height: 100%;
     text-align: center;
-    background: transparent;
+    justify-content: center;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        bottom: 0;
-        z-index: -1;
-        background: var(--color-header-bg, #fff);
-        transform: translateY(-100%);
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: background-color 1s cubic-bezier(0.104, 0.204, 0.492, 1);
+    a {
+      text-align: center;
+      justify-content: center;
+      width: 50px;
+      margin: 0 20px;
+
+      font-size: 22px;
+      // color: #fff6;
+      color: rgb(85, 26, 139);
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $primary-color;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      // TODO: fix after for navbar
+      &:after {
+        // content: '';
+        // font-size: 9px;
+        // letter-spacing: 2px;
+        // position: absolute;
+        // bottom: 0;
+        // display: block;
+        // width: 100%;
+        // text-align: center;
+        // opacity: 0;
+        // transition: all 0.3s ease-out;
+        width: 10px;
+        left: 50%;
+        margin-left: -10px;
+      }
+
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
     }
-    &:hover {
-        background-color: #fff;
-        transition: all .25s cubic-bezier(.104,.204,.492,1);    } 
-        // transform: translateY(-100%);
-    .logo {
-        position: relative;
-        display: inline-flex;
-        margin: 20px 0;
 
-        // padding: 8px 0;
-    
-        img {
-            top: 0;
-            left: 0;
-            display: inline-block;
-            margin: 8px auto;
-            width: 24px;
-            width: auto;
-
-            &.sub-logo {
-                width: 50px;
-            }
-        }
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
     }
 
-    nav {
-        display: inline-flex;
-        height: 100%;
-        text-align: center;
-        justify-content: center;
-        
-        position: relative;
-        height: 100%;
-        margin: 0 auto;
-        max-width: 100%;
-    
-        a {
-            text-align: center;
-            justify-content: center;
-            width: 50px;
-            margin: 0 20px;
-
-            font-size: 22px;
-            // color: #fff6; 
-            color: rgb(85,26,139);
-            position: relative;
-            text-align: center;
-            text-decoration: none;
-    
-            i {
-                transition: all 0.3s ease-out;
-            }
-    
-            &:hover {
-                color: $primary-color;
-    
-                svg {
-                    opacity: 0;
-                }
-    
-                &:after {
-                    opacity: 1;
-                }
-            } 
-    
-            // TODO: fix after for navbar
-            &:after {
-                // content: '';
-                // font-size: 9px;
-                // letter-spacing: 2px;
-                // position: absolute;
-                // bottom: 0;
-                // display: block;
-                // width: 100%;
-                // text-align: center;
-                // opacity: 0;
-                // transition: all 0.3s ease-out;
-                width: 10px;
-                left: 50%;
-                margin-left: -10px;
-            }
-    
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
-        }
-    
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
-        }
-    
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-    
-        a.active {
-            svg {
-                color: $primary-color;
-            }
-            &:after {
-                color: $primary-color;
-            }
-        }
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
     }
-    
-    ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
+
+    a.active {
+      svg {
+        color: $primary-color;
+      }
+      &:after {
+        color: $primary-color;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        color: #4d4d4e;
+        padding: 7px 0;
         display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-    
-        li {
-            a {
-                color: #4d4d4e; 
-                padding: 7px 0;
-                display: block;
-                font-size: 15px;
-                line-height: 16px;
-    
-    
-                &:hover svg {
-                    color: $primary-color
-                }
-            }
+        font-size: 15px;
+        line-height: 16px;
+
+        &:hover svg {
+          color: $primary-color;
         }
+      }
     }
+  }
 }
-
-
-
-

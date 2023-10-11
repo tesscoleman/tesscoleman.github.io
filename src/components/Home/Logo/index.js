@@ -1,5 +1,4 @@
 import './index.scss'
-import LogoCat from '../../../assets/images/cat.jpg'
 import { useRef } from 'react'
 import { useEffect } from 'react'
 import gsap from 'gsap-trial'
