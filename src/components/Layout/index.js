@@ -19,11 +19,18 @@ const Layout = () => {
       >
         <AnimatedCursor
           color="280, 245, 255"
-          innerSize={0}
+          innerSize={5}
           outerSize={40}
           outerStyle={{
             mixBlendMode: 'exclusion',
-            borderRadius: '2'
+            borderRadius: '2',
+            animation: 'fadeIn 4s',
+            // TODO: fix delay
+            //animationDelay: '1s'
+
+          }}
+          innerStyle={{
+            borderRadius: '2',
           }}
           outerAlpha={1}
           // trailingSpeed={10}
