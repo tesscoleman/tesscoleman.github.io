@@ -14,8 +14,11 @@ $primary-color: #9dce2a;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  //border-radius: 0 0 25px 25px;
 
   background: transparent;
+
+  //box-shadow: 0 0 50px 15px #48abe0;
 
   &:hover {
     background-color: #fff;
