@@ -16,7 +16,7 @@ $primary-color: #A7C957;
   animation-fill-mode: both;
 
   &:hover {
-    animation: rubberBand 1s;
+    animation: flash 1s;
     color: $primary-color;
   }
 }
