@@ -32,8 +32,10 @@ $primary-color: #A7C957;
 
     // TODO: add secondary color etc
     h2 {
-        color: #f9ba75;
+        border-top: 1px solid #333;
+        color: #c0257a;
         margin-top: 20px;
+        font-family: 'Gemini', sans-serif;
         font-weight: 400;
         font-size: 30px;
         letter-spacing: 3px;
