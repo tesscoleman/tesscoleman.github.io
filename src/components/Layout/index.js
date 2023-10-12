@@ -18,12 +18,17 @@ const Layout = () => {
         }}
       >
         <AnimatedCursor
-          color="184, 17, 184"
-          innerSize={40}
-          outerSize={0}
-          innerStyle={{
-            mixBlendMode: 'difference',
+          color="280, 245, 255"
+          innerSize={0}
+          outerSize={40}
+          outerStyle={{
+            mixBlendMode: 'exclusion',
+            borderRadius: '2'
           }}
+          outerAlpha={1}
+          // trailingSpeed={10}
+          // showSystemCursor={'false'}
+          outerScale={.6}
         />
         <Outlet />
 
