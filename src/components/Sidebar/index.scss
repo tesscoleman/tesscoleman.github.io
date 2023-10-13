@@ -2,7 +2,7 @@ $primary-color: #9dce2a;
 
 
 .nav-bar {
-  border: 1px solid;
+ // border: 1px solid;
   border-bottom-color: #fff6;
   width: 100%;
   min-height: 100px;
@@ -18,9 +18,10 @@ $primary-color: #9dce2a;
 
   background: transparent;
 
-  //box-shadow: 0 0 50px 15px #48abe0;
+  box-shadow: 0 0 50px 15px #48abe0;
 
   &:hover {
+
     background-color: #fff;
     mix-blend-mode: difference;
     transition: background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);
