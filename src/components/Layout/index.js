@@ -41,11 +41,7 @@ const Layout = () => {
 
         <br />
       </div>
-      <div className='noise'
-      style={{
-        backgroundImage: `url(${noise})`,
-        backgroundRepeat: 'repeat',
-      }}></div>
+
     </div>
   )
 }

@@ -7,19 +7,24 @@ $primary-color: #A7C957;
     .text-zone {
         position: absolute;
         left: 10%;
-        //top: 50%;
+        top: 30%;
         //transform: translateY(-50%);
         width: 40%;
         //max-height: 90%;
-
+        position: relative;
+        
     }
     h1 {
-
+        position: relative;
         color: #fff;
         font-size: 80px;
         margin: 0;
         font-family: 'Eckmann';
         font-weight: 400;
+        z-index: 100;
+
+
+        
     }
 
     // TODO: add secondary color etc
@@ -37,6 +42,7 @@ $primary-color: #A7C957;
         font-size: 30px;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
+        //position: relative;
 
     }
 

@@ -9,11 +9,13 @@ $primary-color: #a7c957;
   overflow-y: scroll;
   box-sizing: border-box;
   padding: 0;
+
 }
 .page::-webkit-scrollbar {
   display: none;
 }
 .container {
+
   position: relative;
   width: 100%;
   will-change: contents;
@@ -82,7 +84,7 @@ $primary-color: #a7c957;
   pointer-events: none;
   position:fixed;
   
-  z-index: 30;
+  z-index: 0;
   top: -100%;
   left: -50%;
   height: 300%;
