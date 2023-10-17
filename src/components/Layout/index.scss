@@ -6,7 +6,7 @@ $primary-color: #a7c957;
 
   position: fixed;
   
-  overflow-y: scroll;
+  //overflow-y: scroll;
   box-sizing: border-box;
   padding: 0;
 
@@ -91,7 +91,7 @@ $primary-color: #a7c957;
   width: 300%;
   animation: grain 10s steps(10) infinite;
   background-size: 200px;
-  opacity: 0.9;
+  opacity: 0.6;
   overflow-y: clip;
 }
 
