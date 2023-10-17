@@ -3,19 +3,27 @@ $primary-color: #a7c957;
 .page {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  position: absolute;
-}
 
+  position: fixed;
+  
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 0;
+}
+.page::-webkit-scrollbar {
+  display: none;
+}
 .container {
+  position: relative;
   width: 100%;
   will-change: contents;
   height: 90%;
   min-height: 566px;
   position: absolute;
   opacity: 0;
-  top: 35%;
-  margin: 0 auto;
+  //top: 35%;
+  margin-top: 100px;
+  //margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
@@ -72,7 +80,8 @@ $primary-color: #a7c957;
 
 .noise {
   pointer-events: none;
-  position: fixed;
+  position:fixed;
+  
   z-index: 30;
   top: -100%;
   left: -50%;
@@ -81,6 +90,7 @@ $primary-color: #a7c957;
   animation: grain 10s steps(10) infinite;
   background-size: 200px;
   opacity: 0.9;
+  overflow-y: clip;
 }
 
 @keyframes grain {
