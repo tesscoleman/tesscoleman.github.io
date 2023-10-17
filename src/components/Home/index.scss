@@ -22,7 +22,8 @@ $primary-color: #A7C957;
         font-family: 'Eckmann';
         font-weight: 400;
         z-index: 100;
-
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: black;
 
         
     }

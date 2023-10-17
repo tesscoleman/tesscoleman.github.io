@@ -78,6 +78,8 @@ $primary-color: #9dce2a;
 
       position: relative;
       text-decoration: none;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
 
       i {
         transition: all 0.3s ease-out;
