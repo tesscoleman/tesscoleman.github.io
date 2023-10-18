@@ -86,3 +86,14 @@ $primary-color: #A7C957;
     height: auto;
     right: 0;
 }
+
+.computerImg {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    right: 0;
+    bottom: 0;
+    //opacity: 0.5;
+    //background-color: #A7C957;
+    mix-blend-mode: color-dodge;
+}
