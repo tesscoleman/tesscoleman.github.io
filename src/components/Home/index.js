@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import Logo from './Logo'
 import Loader from 'react-loaders'
 import noise from '../../assets/images/noise.png'
+import testText from '../../assets/images/test-text.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,7 +41,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-
+      <img className="testText" src={testText} alt="test"/>
         <div className="text-zone">
         <div
           className="noise"
@@ -66,7 +67,9 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
-          <div className="contents"></div>
+          <div className="contents">
+            
+          </div>
         </div>
       </div>
       {/* <Loader type='pacman'/> */}

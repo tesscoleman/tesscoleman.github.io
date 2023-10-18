@@ -7,7 +7,7 @@ $primary-color: #A7C957;
     .text-zone {
         position: absolute;
         left: 10%;
-        top: 30%;
+        top: 0;
         //transform: translateY(-50%);
         width: 40%;
         //max-height: 90%;
@@ -70,10 +70,19 @@ $primary-color: #A7C957;
 }
 
 .contents {
-    height: 800px;
+    position: relative;
+    top: 0;
+    height: 500px;
     width: 100%;
     background-color: blue;
     display: inline-block;
     z-index: -1;
 
+}
+
+.testText {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 0;
 }

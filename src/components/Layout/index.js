@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar'
 import './index.scss'
 import AnimatedCursor from 'react-animated-cursor'
-import backgroundImg from '../../assets/images/51141146446_69daa83120_k.jpg'
+import backgroundImg from '../../assets/images/background.jpg'
 import noise from '../../assets/images/noise.png'
 
 const Layout = () => {
