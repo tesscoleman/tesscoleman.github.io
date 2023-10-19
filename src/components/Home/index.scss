@@ -95,5 +95,7 @@ $primary-color: #A7C957;
     bottom: 0;
     //opacity: 0.5;
     //background-color: #A7C957;
+    filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(200deg);
+
     mix-blend-mode: color-dodge;
 }
