@@ -1,101 +1,109 @@
-$primary-color: #A7C957;
+$primary-color: #a7c957;
 
 .home-page {
-    animation: fadeIn 1s 1.8s forwards;
-    
-    animation-delay: 1s;
-    .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 0;
-        //transform: translateY(-50%);
-        width: 40%;
-        //max-height: 90%;
-        position: relative;
-        
+  animation: fadeIn 1s 1.8s forwards;
+
+  animation-delay: 1s;
+  .text-zone {
+    margin-top: 20px;
+    padding: 50px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    top: 0;
+    //transform: translateY(-50%);
+    //width: 40%;
+    //max-height: 90%;
+    //position: relative;
+    border: 5px solid yellow;
+    outline: 5px solid lightcoral;
+    outline-offset: -20px;
+    background: rgb(213, 139, 255);
+    background: radial-gradient(
+      circle,
+      rgba(213, 139, 255, 0.5) 0%,
+      rgba(202, 53, 255, 0.5) 100%
+    );
+  }
+  h1 {
+    position: relative;
+    color: #fff;
+    font-size: 80px;
+    margin: 0;
+    font-family: 'Eckmann';
+    font-weight: 400;
+    z-index: 100;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+  }
+
+  // TODO: add secondary color etc
+  h2 {
+    box-shadow: 0 0 50px 0px lightyellow;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    //border-top: 1px solid #333;
+    color: #c0257a;
+    margin-top: 20px;
+    font-family: 'Gemini', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+    width: 50%;
+    //position: relative;
+  }
+
+  .flat-button {
+    color: $primary-color;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: $primary-color;
+      color: #333;
     }
-    h1 {
-        position: relative;
-        color: #fff;
-        font-size: 80px;
-        margin: 0;
-        font-family: 'Eckmann';
-        font-weight: 400;
-        z-index: 100;
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: black;
-
-        
-    }
-
-    // TODO: add secondary color etc
-    h2 {
-        box-shadow: 0 0 50px 0px lightyellow;
-        background-color: white;
-        border-radius: 20px;
-        padding: 10px 20px;
-
-        //border-top: 1px solid #333;
-        color: #c0257a;
-        margin-top: 20px;
-        font-family: 'Gemini', sans-serif;
-        font-weight: 400;
-        font-size: 30px;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
-        //position: relative;
-
-    }
-
-    .flat-button {
-        color: $primary-color;
-        font-size: 13px;
-        font-weight: 400;
-        letter-spacing: 4px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid;
-        margin-top: 25px;
-        float: left;
-        animation: fadeIn 1s 1.8s backwards;
-        white-space: nowrap;
-
-        &:hover {
-            background: $primary-color;
-            color: #333;
-        }
-
-    }
+  }
 }
 
 .contents {
-    position: relative;
-    top: 0;
-    height: 500px;
-    width: 100%;
-    background-color: blue;
-    display: inline-block;
-    z-index: -1;
-
+  position: relative;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  display: inline-block;
+  z-index: -1;
 }
 
 .testText {
-    position: absolute;
-    width: 400px;
-    height: auto;
-    right: 0;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  right: 0;
 }
 
 .computerImg {
-    position: absolute;
-    width: 600px;
-    height: auto;
-    right: 0;
-    bottom: 0;
-    //opacity: 0.5;
-    //background-color: #A7C957;
-    filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(200deg);
+  position: absolute;
+  width: 600px;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  //opacity: 0.5;
+  //background-color: #A7C957;
+  filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(200deg);
 
-    mix-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
 }
