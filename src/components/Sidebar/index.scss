@@ -56,8 +56,8 @@ $primary-color: #9dce2a;
     
     display: flex;
     height: 100%;
+    text-align: center;
     //position: relative;
-    height: 100%;
     max-width: 100%;
 
     a {
@@ -65,57 +65,65 @@ $primary-color: #9dce2a;
       text-shadow: 0 0 5px rgba(191, 255, 220, 0.9), 1px 2px 10px rgba(158, 32, 148, 0.9);
       visibility: hidden;
       display: flex;
-      text-align: center;
+      position: relative;
+      align-items: center;
       justify-content: center;
-      width: 50px;
-      margin: 0 80px;
 
+      width: 100px;
+      margin: 0 80px; // adding margin as a transition looks cool too
       font-size: 24px; // TODO uhh the 1s ease-in transition to 28px looks kinda cool - for loading?
       // color: #fff6;
       //color: rgb(85, 26, 139, 0.8);
       // color: rgb(80, 87, 67, 1);
       color: rgb(59, 70, 36, 1);
 
-      position: relative;
+
       text-decoration: none;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: black;
-
+      
       i {
         transition: all 0.3s ease-out;
       }
 
       &:hover {
-        
         color: $primary-color;
         
 
         svg {
+          animation: 1s fadeIn;
+          animation-fill-mode: forwards;
           visibility: visible;
-          //opacity: 0;
         }
 
         &:after {
+          opacity: 0;
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
           opacity: 1;
         }
       }
-
       // TODO: fix after for navbar
       &:after {
+        
         visibility: visible;
         // content: '';
-        // font-size: 9px;
+        //font-size: 9px;
         // letter-spacing: 2px;
-        // position: absolute;
-        // bottom: 0;
-        // display: block;
-        // width: 100%;
-        // text-align: center;
-        // opacity: 0;
-        // transition: all 0.3s ease-out;
-        width: 10px;
-        left: 50%;
-        margin-left: -10px;
+        position: absolute;
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        //width: 10px;
+        //left: 50%;
+        //margin: 0 auto;
         opacity: 1;
       }
 
@@ -141,7 +149,7 @@ $primary-color: #9dce2a;
     a.active {
       svg {
         //color: $primary-color;
-        color: rgb(85, 26, 139, 0.8);
+        //color: rgb(85, 26, 139, 0.8);
       }
       &:after {
         //color: $primary-color;
