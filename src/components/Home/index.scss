@@ -131,3 +131,11 @@ $primary-color: #a7c957;
 
   mix-blend-mode:hue;
 }
+
+.frame {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}

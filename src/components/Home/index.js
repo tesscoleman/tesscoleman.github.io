@@ -8,6 +8,7 @@ import Loader from 'react-loaders'
 import noise from '../../assets/images/noise.png'
 import testText from '../../assets/images/test-text.png'
 import computer from '../../assets/images/computer-cropped.png'
+import frame from '../../assets/images/frame.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,6 +45,7 @@ const Home = () => {
       <div className="container home-page">
       <img className="testText" src={testText} alt="test"/>
       <img className="computerImg" src={computer} alt="computer"/>
+      
       <div
           className="noise"
           style={{
@@ -51,8 +53,9 @@ const Home = () => {
             backgroundRepeat: 'repeat',
           }}
         ></div>
+        <img className="frame" src={frame} alt="frame"/>
         <div className="text-zone">
-
+        
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
