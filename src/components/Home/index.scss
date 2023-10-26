@@ -5,36 +5,47 @@ $primary-color: #a7c957;
 
   animation-delay: 1s;
   .text-zone {
-    margin-top: 20px;
-    padding: 50px;
+    margin: 20px 0px;
+    bottom: 0;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
+    overflow-y: auto;
+    width: 70%;
+    //left: 10%;
+    //right: 10%;
+    
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
+    text-align: center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
     //transform: translateY(-50%);
     //width: 40%;
     //max-height: 90%;
     //position: relative;
-    border: 5px solid yellow;
-    outline: 5px solid lightcoral;
-    outline-offset: -20px;
-    background: rgb(213, 139, 255);
-    background: radial-gradient(
-      circle,
-      rgba(213, 139, 255, 0.5) 0%,
-      rgba(202, 53, 255, 0.5) 100%
-    );
+    // border: 5px solid yellow;
+    // outline: 5px solid lightcoral;
+    // outline-offset: -20px;
+    // background: rgb(213, 139, 255);
+    // background: radial-gradient(
+    //   circle,
+    //   rgba(213, 139, 255, 0.5) 0%,
+    //   rgba(202, 53, 255, 0.5) 100%
+    // );
   }
   h1 {
     position: relative;
-    color: #fff;
+    color: rgb(29, 32, 22);
     font-size: 80px;
     margin: 0;
     font-family: 'Eckmann';
     font-weight: 400;
-    z-index: 100;
-    // -webkit-text-stroke-width: 3px;
+    //z-index: 100;
+    // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: black;
 
 
@@ -42,20 +53,20 @@ $primary-color: #a7c957;
 
   // TODO: add secondary color etc
   h2 {
-    box-shadow: 0 0 50px 0px lightyellow;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
+    //box-shadow: 0 0 50px 0px lightyellow;
+    //background-color: white;
+    //border-radius: 20px;
+    //padding: 10px 20px;
 
     //border-top: 1px solid #333;
-    color: #c0257a;
-    margin-top: 20px;
-    font-family: 'Gemini', sans-serif;
+    color: #852e80;
+    margin: 10px;
+    //font-family: 'Gemini';
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
-    width: 50%;
+    
     //position: relative;
   }
 
@@ -69,8 +80,9 @@ $primary-color: #a7c957;
     padding: 10px 18px;
     border: 1px solid;
     border-radius: 10px;
-    margin-top: 25px;
-    float: left;
+    display: inline-block;
+    margin: 20px 10px;
+    //float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
@@ -92,11 +104,10 @@ $primary-color: #a7c957;
 .contents {
   position: relative;
   top: 0;
-  height: 500px;
+  height: 700px;
   width: 500px;
   background-color: blue;
   display: inline-block;
-  z-index: -1;
   
 }
 
