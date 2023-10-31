@@ -7,6 +7,7 @@ import backgroundImg from '../../assets/images/background.jpg'
 const Layout = () => {
   return (
     <div className="App">
+
       <Sidebar />
       <div
         className="page"

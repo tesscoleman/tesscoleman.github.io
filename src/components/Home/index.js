@@ -9,6 +9,8 @@ import noise from '../../assets/images/noise.png'
 import testText from '../../assets/images/test-text.png'
 import computer from '../../assets/images/computer-cropped.png'
 import frame from '../../assets/images/frame.png'
+import star from '../../assets/images/star.png'
+import Sidebar from '../Sidebar'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -43,19 +45,20 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-      <img className="testText" src={testText} alt="test"/>
-      <img className="computerImg" src={computer} alt="computer"/>
-      
-      <div
+
+        <img className="testText" src={testText} alt="test" />
+        <img className="computerImg" src={computer} alt="computer" />
+        <img className="star" src={star} alt="star" />
+
+        <div
           className="noise"
           style={{
             backgroundImage: `url(${noise})`,
             backgroundRepeat: 'repeat',
           }}
         ></div>
-        <img className="frame" src={frame} alt="frame"/>
+        {/* <img className="frame" src={frame} alt="frame" /> */}
         <div className="text-zone">
-        
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
@@ -74,7 +77,7 @@ const Home = () => {
           </Link>
           <br />
           <div className="contents">
-            
+
           </div>
         </div>
       </div>
