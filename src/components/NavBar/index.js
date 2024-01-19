@@ -3,10 +3,11 @@ import './index.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import icon from '../../assets/images/dancinbbi2.gif'
 
-const Sidebar = () => (
+const NavBar = () => (
   <div className="nav-bar">
+    {/* <img className='icon' src={icon} style={{width:'30px', position:'absolute', left:'0', padding:'8px', marginLeft:'40px', border:'solid 1px white', background:'white'}}/> */}
     {/* react router dom Link to homepage*/}
     {/* <Link className='logo' to='/'>
             <img src='' alt="logo" />
@@ -34,19 +35,7 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} />
       </NavLink>
     </nav>
-    {/* <ul>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://google.com/' >
-                    <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel='noreferrer' href='https://google.com/' >
-                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
-                </a>
-            </li>
-        </ul> */}
   </div>
 )
 
-export default Sidebar
+export default NavBar

@@ -1,8 +1,5 @@
 $primary-color: #A7C957;
 
-@import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
-
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
@@ -21,6 +18,16 @@ $primary-color: #A7C957;
 @font-face {
   font-family: 'Gemini';
   src: url('./assets/fonts/Auto\ Mission.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gothic Coding Regular';
+  src: url('./assets/fonts/NanumGothicCoding-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gothic Coding Bold';
+  src: url('./assets/fonts/NanumGothicCoding-Bold.woff2') format('woff2');
 }
 
 input,

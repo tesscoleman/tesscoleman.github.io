@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import Sidebar from '../Sidebar'
+import NavBar from "../NavBar"
 import './index.scss'
 import AnimatedCursor from 'react-animated-cursor'
 import backgroundImg from '../../assets/images/background.jpg'
@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div className="App">
 
-      <Sidebar />
+      <NavBar />
       <div
         className="page"
         style={{
@@ -17,7 +17,7 @@ const Layout = () => {
           backgroundSize: 'cover',
         }}
       >
-        <AnimatedCursor
+        {/* <AnimatedCursor
           color="280, 245, 255"
           innerSize={5}
           outerSize={40}
@@ -36,7 +36,7 @@ const Layout = () => {
           // trailingSpeed={10}
           // showSystemCursor={'false'}
           outerScale={.6}
-        />
+        /> */}
         <Outlet />
 
         <br />

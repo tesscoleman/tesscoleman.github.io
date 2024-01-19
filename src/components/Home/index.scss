@@ -1,79 +1,72 @@
 $primary-color: #a7c957;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 .home-page {
   animation: fadeIn 1s 1.8s forwards;
-
   animation-delay: 1s;
+
   .text-zone {
     margin: 20px 0px;
     bottom: 0;
     position: absolute;
     overflow-y: auto;
     width: 70%;
-    //left: 10%;
-    //right: 10%;
-    
     left: 50%;
     transform: translateX(-50%);
     top: 0;
     text-align: center;
+    align-items: center;
     &::-webkit-scrollbar {
       display: none;
     }
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-
-    //transform: translateY(-50%);
-    //width: 40%;
-    //max-height: 90%;
-    //position: relative;
-    // border: 5px solid yellow;
-    // outline: 5px solid lightcoral;
-    // outline-offset: -20px;
-    // background: rgb(213, 139, 255);
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(213, 139, 255, 0.5) 0%,
-    //   rgba(202, 53, 255, 0.5) 100%
-    // );
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .title {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   h1 {
-    margin: 200px 0 0 0;
-    position: relative;
+    // position: relative;
     color: rgb(29, 32, 22);
     font-size: 80px;
-    //margin: 0;
     font-family: 'Eckmann';
     font-weight: 400;
-    //z-index: 100;
-    // -webkit-text-stroke-width: 1px;
-    // -webkit-text-stroke-color: black;
-
-
   }
+  .star {
+    padding: 0 5rem;
 
+    position: absolute;
+    height: 60px;
+    width: auto;
+    vertical-align: bottom;
+  }
   // TODO: add secondary color etc
   h2 {
-    //box-shadow: 0 0 50px 0px lightyellow;
-    //background-color: white;
-    //border-radius: 20px;
-    //padding: 10px 20px;
-
-    //border-top: 1px solid #333;
-    color: #852e80;
+    // font-family: 'Playfair Display', serif;
+    font-family: 'Gemini', serif;
+    color: #000;
     margin: 10px;
-    //font-family: 'Gemini';
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
-    
-    //position: relative;
   }
 
   .flat-button {
-    color: white;
+    background: #000;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3),
+      0 0 2px rgba(255, 255, 255, 0.3), 0 0 4px rgba(255, 255, 255, 0.3),
+      0 0 6px rgba(255, 175, 241, 0.3), 0 0 10px rgba(255, 175, 241, 0.3),
+      0 0 11px rgba(255, 223, 249, 0.3), 0 0 12px rgba(255, 221, 249, 0.3),
+      0 0 15px rgba(253, 218, 247, 0.3);
+
     font-size: 13px;
+    height: fit-content;
+    vertical-align: middle;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: Eckmann;
@@ -82,24 +75,74 @@ $primary-color: #a7c957;
     border: 1px solid;
     border-radius: 10px;
     display: inline-block;
-    margin: 20px 10px;
-    //float: left;
+    // margin: 20px 10px;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: black;
-      color: white;
-      text-shadow: 0 0 4px rgba(255,255,255,0.5),
-      0 0 5px rgba(255,255,255,0.5),
-      0 0 11px rgba(255,255,255,0.5),
-      0 0 21px rgba(255,175,241,0.5),
-      0 0 41px rgba(255,175,241,0.5),
-      0 0 46px rgba(255,175,241,0.5),
-      0 0 51px rgba(255,175,241,0.5),
-      0 0 75px rgba(255,175,241,0.5);
+      background: #000;
+      color: #fff;
+      text-shadow: 0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 5px rgba(255, 255, 255, 0.5), 0 0 11px rgba(255, 255, 255, 0.5),
+        0 0 21px rgba(255, 175, 241, 0.5), 0 0 41px rgba(255, 175, 241, 0.5),
+        0 0 46px rgba(255, 175, 241, 0.5), 0 0 51px rgba(255, 175, 241, 0.5),
+        0 0 75px rgba(255, 175, 241, 0.5);
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.3),
+        0 0 5px rgba(255, 255, 255, 0.5), 0 0 8px rgba(255, 255, 255, 0.4),
+        0 0 14px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    transition: 0.2s ease-in;
+  }
+
+  .landing-box-outer {
+    position: relative;
+    margin: auto 0;
+    width: 80%;
+    height: 90%;
+    &:before {
+
+      content: "";
+      left: 60px;
+      right: 60px;
+      top: 12px;
+      bottom: 12px;
+      position: absolute;
+      border-left: 4px solid #000;
+      border-right: 4px solid #000;
     }
   }
+
+  .landing-box {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fdf1cf;
+    // margin: 4rem;
+    border-top: double #000 12px;
+    border-right: 3px solid #000;
+    border-bottom: double #000 12px;
+    border-left: 3px solid #000;
+    padding: 5rem 8rem;
+    &:before {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        content: "■ ■";
+        font-size: 2.8rem;
+        color: rgb(212, 49, 177);
+    }
+    &:after {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      content: "■ ■";
+      font-size: 2.8rem;
+      color: rgb(212, 49, 177);
+  }
+
+  }
+
 }
 
 .contents {
@@ -110,7 +153,6 @@ $primary-color: #a7c957;
   background-color: wheat;
   display: inline-block;
   opacity: 0;
-  
 }
 
 .testText {
@@ -121,25 +163,24 @@ $primary-color: #a7c957;
 }
 
 .computerImg {
-    z-index: 20;
-  position: absolute;
-  width: 600px;
+  z-index: 20;
+  position: relative;
+  display: inline;
+  width: 60px;
+  vertical-align: middle;
   height: auto;
   right: 0;
   bottom: 0;
-  //opacity: 0.5;
-  //background-color: #A7C957;
-  filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(200deg);
-
-  mix-blend-mode:hue;
+  filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(10deg);
+  mix-blend-mode: hue;
 }
 
 .frame {
   position: absolute;
   z-index: 20;
   left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    width: 900px;
-    height: 800px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  width: 900px;
+  height: 800px;
 }
