@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import { useState } from 'react'
 import NavBar from "../NavBar"
 import './index.scss'
 import AnimatedCursor from 'react-animated-cursor'
@@ -8,7 +9,7 @@ const Layout = () => {
   return (
     <div className="App">
 
-      <NavBar />
+
       <div
         className="page"
         style={{

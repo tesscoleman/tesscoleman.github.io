@@ -2,11 +2,15 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faFileCode } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 import icon from '../../assets/images/dancinbbi2.gif'
 
-const NavBar = () => (
-  <div className="nav-bar">
+
+const NavBar = ({handleClick}) => {
+
+  return (
+    <div className="nav-bar">
     {/* <img className='icon' src={icon} style={{width:'30px', position:'absolute', left:'0', padding:'8px', marginLeft:'40px', border:'solid 1px white', background:'white'}}/> */}
     {/* react router dom Link to homepage*/}
     {/* <Link className='logo' to='/'>
@@ -15,27 +19,29 @@ const NavBar = () => (
 
         </Link> */}
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/">
+      <a exact="true" activeclassname="active" onClick={()=>{handleClick(0);}}>
         <FontAwesomeIcon icon={faHome} />
-      </NavLink>
-      <NavLink
+      </a>
+      <a
         exact="true"
         activeclassname="active"
         className="about-link"
-        to="/about"
+        onClick={()=>{handleClick(1);}}
       >
-        <FontAwesomeIcon icon={faUser} />
-      </NavLink>
-      <NavLink
+        <FontAwesomeIcon icon={faFileCode} />
+      </a>
+      <a
         exact="true"
         activeclassname="active"
         className="contact-link"
-        to="/contact"
+        onClick={()=>{handleClick(2);}}
       >
         <FontAwesomeIcon icon={faEnvelope} />
-      </NavLink>
+      </a>
     </nav>
   </div>
-)
+  )
+
+      }
 
 export default NavBar

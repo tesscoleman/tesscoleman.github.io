@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 'Eckmann', sans-serif;
-  color: #fff6;
+  color: rgba(0, 0, 0, 0.8);
   background-color: #740F3D;
   overflow: hidden;
   display: block;
