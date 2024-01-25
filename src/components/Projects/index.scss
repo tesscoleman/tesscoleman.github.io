@@ -1,6 +1,7 @@
 .project-container {
   border-radius: 16px;
-  position: absolute;
+  position: relative;
+  left: 0;
   height: 100%;
   width: 100%;
   border: 1px solid #000;
@@ -48,4 +49,6 @@
       max-width: 200px;
     }
   }
+
+
 }

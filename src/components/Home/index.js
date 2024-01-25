@@ -15,14 +15,7 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['T', 'E', 'S', 'S', ' ', 'C', 'O', 'L', 'E', 'M', 'A', 'N']
 
-  // const [page, setPage] = useState(0);
-
   const parallax = useRef(Parallax)
-
-  // useEffect(() => {
-  //   parallax.current.scrollTo(page);
-  //   console.log("changing page to:" + page)
-  // }, [page])
 
   const scrollToPage = (page) => {
     parallax.current.scrollTo(page)
@@ -191,37 +184,15 @@ const Home = () => {
             }}
           >
             <div className="contact-card-outer">
-              <div className="contact-card" style={{margin: "0", fontSize:"2rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+              <div className="contact-card" style={{position:"absolute",zIndex:"100",margin: "0", fontSize:"2rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                <p style={{textDecoration:"underline"}}>Tess Coleman</p>
                 <p style={{}}>Email: colem391@msu.edu</p>
-                <p style={{}}>Github: tesscoleman</p>
+                <p style={{}}>Github: <a href="https://github.com/tesscoleman" target="_blank">tesscoleman</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/tess-c-786265165/" target="_blank">linkedin.com/in/tess-c-786265165</a></p>
               </div>
             </div>
           </ParallaxLayer>
         </Parallax>
-
-        {/* <div className="text-zone">
-          <div className="title">
-            <img className="star" src={star} alt="star" />
-            <h1>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={nameArray}
-                idx={15}
-              />
-            </h1>
-            <img className="star" src={star} alt="star" />
-          </div>
-          <h2 onMouseOver={handleClick}>
-            Software Developer
-            <img className="computerImg" src={computer} alt="computer" />
-          </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-
-          <br />
-          <div className="contents"></div>
-        </div> */}
       </div>
     </>
   )
