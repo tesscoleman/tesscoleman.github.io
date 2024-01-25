@@ -1,6 +1,8 @@
 
 
 .project-open {
+    font-family: 'Farro', sans-serif;
+
     border-radius: 6px;
     background-color: pink;
     width: 85%;
@@ -8,4 +10,11 @@
     margin-left: auto;
     padding: 20px;
     box-shadow: rgb(77, 49, 8) 5px 5px, rgb(209, 104, 19) 10px 10px, rgb(240, 162, 46) 15px 15px, rgb(240, 204, 46) 20px 20px, rgba(247, 213, 65, 0.26) 25px 25px;
+
+    .description {
+      font-size: 1.6rem;
+    }
+    .link {
+      font-size: 1.4rem;
+    }
   }

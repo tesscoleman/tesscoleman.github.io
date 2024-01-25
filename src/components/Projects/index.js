@@ -24,19 +24,15 @@ const Projects = () => {
       opacity: 1,
     },
     leave: {
-      scale: 1,
-      opacity: 1,
+      scale: 0,
+      opacity: 0,
     },
   })
-  // const springApi = useSpringRef()
-  // const [springs, api] = useSpring(() => ({
-  //   ref: springApi,
-  //   config: config.stiff,
-  //   from: { width: "100%" },
-  // }))
 
 
-  const handleClick = (index) => {
+
+
+function handleClick (index) {
     setSelected(index)
     if (index === selected) {
       setIsOpen(false)
@@ -76,8 +72,8 @@ const Projects = () => {
           <h2 className="project-title">MI Diaries App-Builder</h2>
           {isOpen ? null : <>
             <h3 className="project-desc">
-            An App-Builder for researchers to customize an audio-recoding mobile
-            app.
+            An App-Builder for researchers to customize an audio-recording mobile
+            application.
           </h3>
           <h3 className="project-desc">Angular, Typescript, Flutter</h3>
           </>}
@@ -101,8 +97,8 @@ const Projects = () => {
       {transition((style, isOpen) => (
         <>
           {(isOpen && selected !== null) ? (
-            <animated.div style={{...style, flex: "3"}}>
-              <ProjectCard index={selected} />
+            <animated.div style={{...style, flex: "3", maxHeight: "500px", width: "500px"}}>
+              <ProjectCard index={selected} style={style}/>
             </animated.div>
           ) : null}
         </>

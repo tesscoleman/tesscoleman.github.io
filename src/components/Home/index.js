@@ -64,7 +64,7 @@ const Home = () => {
                 <h1 style={{ margin: '0' }}>Tess Coleman</h1>
                 <h2>software developer •</h2>
                 <hr />
-                <p style={{ textAlign: 'center', letterSpacing: '0.7rem' }}>
+                <p style={{ fontWeight: 500, textAlign: 'center', letterSpacing: '0.7rem' }}>
                   University:
                 </p>
                 <p
@@ -72,7 +72,7 @@ const Home = () => {
                     textAlign: 'center',
                     textDecoration: 'underline',
                     fontSize: '2.3rem',
-                    letterSpacing: '1rem',
+                    letterSpacing: '0.9rem',
                   }}
                 >
                   MICHIGAN STATE UNIVERSITY
@@ -83,12 +83,12 @@ const Home = () => {
                     textAlign: 'center',
                     fontWeight: 300,
                     margin: '1rem 0',
-                    fontSize: '1.4rem',
+                    fontSize: '1.6rem',
                   }}
                 >
                   B.S. Computer Science, August 2023
                 </p>
-                <hr />
+                <div className= "double-hr"/>
                 <div
                   style={{
                     textAlign: 'center',
@@ -96,21 +96,20 @@ const Home = () => {
                     margin: '0 auto',
                   }}
                 >
-                  <hr />
                   <p
                     style={{
-                      fontWeight: 400,
+                      fontWeight: 500,
                       fontSize: '1.5rem',
-                      margin: '1rem 0',
-                      letterSpacing: '0.4rem',
-                      textDecoration: 'underline',
+                      margin: '1.3rem 0',
+                      letterSpacing: '0.7rem',
+                      textDecoration: 'underline'
                     }}
                   >
-                    Languages & Frameworks:
+                    LANGUAGES & FRAMEWORKS:
                   </p>
                   <p
                     style={{
-                      fontSize: '2rem',
+                      fontSize: '2.1rem',
                       fontWeight: 300,
                       letterSpacing: '0rem',
                     }}
@@ -119,13 +118,12 @@ const Home = () => {
                   </p>
                   <hr />
                 </div>
-                <hr />
                 <br />
-                <p style={{ textAlign: 'center', letterSpacing: '1rem' }}>
-                  Relevant Coursework:
+                <p style={{ fontWeight: 500, textAlign: 'center', letterSpacing: '1rem', textDecoration: "underline", fontSize: "1.5rem" }}>
+                  RELEVANT COURSEWORK:
                 </p>
                 <div style={{ textAlign: 'center' }}>
-                  <ul style={{ display:"inline-block", textAlign: "left", padding:0, letterSpacing: "0.2rem", listStyle:"square"}}>
+                  <ul style={{ fontSize: "1.4rem", display:"inline-block", textAlign: "left", padding:0, letterSpacing: "0.2rem", listStyle:"square"}}>
                     <li>Computer Graphics (OpenGL, C++, WebGL)</li>
                     <li>Media Processing & Computing (C++)</li>
                     <li>Collaborative Design (Capstone Project)</li>
@@ -136,12 +134,13 @@ const Home = () => {
                     <li>Algorithms and Data Structures</li>
                   </ul>
                 </div>
+                <div className= "double-hr"/>
               </div>
             </div>
           </ParallaxLayer>
           <ParallaxLayer
             offset={1}
-            speed={0.45}
+            speed={0.5}
             style={{ display: 'flex', justifyContent: 'center', zIndex: 20 }}
           >
             <h1 style={{ fontSize: '6rem', marginTop: '4rem' }}>Projects</h1>
@@ -149,7 +148,7 @@ const Home = () => {
           <ParallaxLayer
             offset={1}
             speed={0.5}
-            factor={1.1}
+            factor={1}
             style={{
               display: 'flex',
               justifyContent: 'center',
@@ -160,8 +159,8 @@ const Home = () => {
             </div>
           </ParallaxLayer>
           <ParallaxLayer
-            offset={1.25}
-            speed={0.5}
+            offset={1.2}
+            speed={0.6}
             style={{ display: 'flex', justifyContent: 'center', zIndex: 20 }}
           >
             <div

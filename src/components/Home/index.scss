@@ -78,6 +78,7 @@ $primary-color: #a7c957;
     // margin: 20px 10px;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
+    cursor: pointer;
 
     &:hover {
       background: #000;
@@ -95,9 +96,10 @@ $primary-color: #a7c957;
   }
 
   .landing-box-outer {
+    color: rgb(29, 32, 22);
     position: relative;
     margin: auto 0;
-    width: 80%;
+    width: 70%;
     height: 90%;
     &:before {
 
@@ -113,6 +115,7 @@ $primary-color: #a7c957;
   }
 
   .landing-box {
+    overflow: auto;
     font-family: 'Farro', sans-serif;
     box-sizing: border-box;
     height: 100%;
@@ -143,6 +146,12 @@ $primary-color: #a7c957;
   }
   p {
     margin: 0;
+  }
+  .double-hr {
+    width: 100%;
+    height: 10px;
+    margin: 2px 0;
+    background-color: rgb(29, 32, 22);
   }
   }
 
@@ -193,6 +202,7 @@ $primary-color: #a7c957;
       font-size: 2.8rem;
       color: rgb(255, 131, 15);
   }
+
   }
 
   .contact-card-outer {
@@ -247,6 +257,7 @@ $primary-color: #a7c957;
   }
 
 }
+
 
 .contents {
   position: relative;

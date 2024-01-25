@@ -1,10 +1,7 @@
-import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faFileCode } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
-import icon from '../../assets/images/dancinbbi2.gif'
+import { faEnvelope, faHome, faFileCode } from '@fortawesome/free-solid-svg-icons'
 
 
 const NavBar = ({handleClick}) => {
