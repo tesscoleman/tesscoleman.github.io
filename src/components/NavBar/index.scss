@@ -133,3 +133,10 @@ $primary-color: #9dce2a;
     }
   }
 }
+
+@media screen and (max-width: 617px) {
+  .nav-bar nav a{
+    font-size: 18px;
+    margin: 1rem;
+  }
+}
