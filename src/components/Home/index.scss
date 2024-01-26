@@ -43,9 +43,9 @@ $primary-color: #a7c957;
     width: auto;
     vertical-align: bottom;
   }
-  // TODO: add secondary color etc
+ 
   h2 {
-    // font-family: 'Playfair Display', serif;
+    //font-family: 'Playfair Display', serif;
     font-family: 'Gemini', serif;
     color: rgb(29, 32, 22);
     margin: 0;
@@ -223,6 +223,7 @@ $primary-color: #a7c957;
     }
 
     .contact-card {
+      font-family: 'Farro', sans-serif;
       box-sizing: border-box;
       height: 100%;
       width: 100%;
@@ -240,7 +241,7 @@ $primary-color: #a7c957;
           top: 10px;
           content: "■ ■";
           font-size: 2.8rem;
-          color: rgb(255, 131, 15);
+          color: rgb(164, 199, 39);
       }
       &:after {
         position: absolute;
@@ -248,7 +249,7 @@ $primary-color: #a7c957;
         top: 10px;
         content: "■ ■";
         font-size: 2.8rem;
-        color: rgb(255, 131, 15);
+        color: rgb(164, 199, 39);
     }
     p {
       margin: 0;

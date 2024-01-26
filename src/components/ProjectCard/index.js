@@ -2,7 +2,7 @@ import './index.scss'
 import michiganBryophytesImg from '../../assets/images/michigan-bryophytes-page.PNG'
 import miDiariesImg from '../../assets/images/mi-diaries-page-2.png'
 import libraryImg from '../../assets/images/library-inventory-app.png'
-import { useSpring, animated, useTransition } from '@react-spring/web'
+import { animated, useTransition } from '@react-spring/web'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
@@ -20,11 +20,6 @@ const ProjectCard = (props) => {
     2: { image: libraryImg,
       description: "A desktop application I created at my job at MSU's library to keep track of checked out Makerspace equipment. Created using Electron."}
   }
-
-  const spring = useSpring({
-    from: { opacity: 0, scale: 0 },
-    to: { opacity: 1, scale: 1 },
-  })
 
   const transition = useTransition(props.index, {
     from: {

@@ -31,8 +31,6 @@ const Home = () => {
     <>
       <NavBar handleClick={scrollToPage} />
       <div className="container home-page">
-        {/* <img className="testText" src={testText} alt="test" /> */}
-
         <div
           className="noise"
           style={{
@@ -45,12 +43,6 @@ const Home = () => {
           pages={3}
           style={{ top: '0', left: '0', overflow: 'hidden auto' }}
         >
-          {/* <ParallaxLayer
-            offset={0}
-            style={{ backgroundColor: 'rgba(138, 134, 53, 0.5)' }}
-          /> */}
-          {/* <ParallaxLayer offset={1} style={{ backgroundColor: '#fdf1cf' }} /> */}
-          {/* <ParallaxLayer offset={2} style={{ backgroundColor: 'magenta' }} /> */}
           <ParallaxLayer
             offset={0}
             speed={0.5}
@@ -58,13 +50,23 @@ const Home = () => {
           >
             <div className="landing-box-outer">
               <div className="landing-box" style={{}}>
-              <a style={{position: "absolute", zIndex:20, right: "100px"}} onClick={() => scrollToPage(2)} className="flat-button">
-              CONTACT ME
-            </a>
+                <a
+                  style={{ position: 'absolute', zIndex: 20, right: '100px' }}
+                  onClick={() => scrollToPage(2)}
+                  className="flat-button"
+                >
+                  CONTACT ME
+                </a>
                 <h1 style={{ margin: '0' }}>Tess Coleman</h1>
                 <h2>software developer •</h2>
                 <hr />
-                <p style={{ fontWeight: 500, textAlign: 'center', letterSpacing: '0.7rem' }}>
+                <p
+                  style={{
+                    fontWeight: 500,
+                    textAlign: 'center',
+                    letterSpacing: '0.7rem',
+                  }}
+                >
                   University:
                 </p>
                 <p
@@ -72,7 +74,7 @@ const Home = () => {
                     textAlign: 'center',
                     textDecoration: 'underline',
                     fontSize: '2.3rem',
-                    letterSpacing: '0.9rem',
+                    letterSpacing: '1rem',
                   }}
                 >
                   MICHIGAN STATE UNIVERSITY
@@ -88,11 +90,11 @@ const Home = () => {
                 >
                   B.S. Computer Science, August 2023
                 </p>
-                <div className= "double-hr"/>
+                <div className="double-hr" />
                 <div
                   style={{
                     textAlign: 'center',
-                    width: '400px',
+                    width: '450px',
                     margin: '0 auto',
                   }}
                 >
@@ -101,15 +103,16 @@ const Home = () => {
                       fontWeight: 500,
                       fontSize: '1.5rem',
                       margin: '1.3rem 0',
-                      letterSpacing: '0.7rem',
-                      textDecoration: 'underline'
+                      letterSpacing: '1rem',
+                      textDecoration: 'underline',
+                      fontFamily: "'Playfair Display', serif",
                     }}
                   >
                     LANGUAGES & FRAMEWORKS:
                   </p>
                   <p
                     style={{
-                      fontSize: '2.1rem',
+                      fontSize: '2rem',
                       fontWeight: 300,
                       letterSpacing: '0rem',
                     }}
@@ -119,11 +122,29 @@ const Home = () => {
                   <hr />
                 </div>
                 <br />
-                <p style={{ fontWeight: 500, textAlign: 'center', letterSpacing: '1rem', textDecoration: "underline", fontSize: "1.5rem" }}>
+                <p
+                  style={{
+                    fontWeight: 500,
+                    textAlign: 'center',
+                    letterSpacing: '1.2rem',
+                    textDecoration: 'underline',
+                    fontSize: '1.6rem',
+                    fontFamily: "'Playfair Display', serif"
+                  }}
+                >
                   RELEVANT COURSEWORK:
                 </p>
                 <div style={{ textAlign: 'center' }}>
-                  <ul style={{ fontSize: "1.4rem", display:"inline-block", textAlign: "left", padding:0, letterSpacing: "0.2rem", listStyle:"square"}}>
+                  <ul
+                    style={{
+                      fontSize: '1.4rem',
+                      display: 'inline-block',
+                      textAlign: 'left',
+                      padding: 0,
+                      letterSpacing: '0.2rem',
+                      listStyle: 'square',
+                    }}
+                  >
                     <li>Computer Graphics (OpenGL, C++, WebGL)</li>
                     <li>Media Processing & Computing (C++)</li>
                     <li>Collaborative Design (Capstone Project)</li>
@@ -134,7 +155,7 @@ const Home = () => {
                     <li>Algorithms and Data Structures</li>
                   </ul>
                 </div>
-                <div className= "double-hr"/>
+                <div className="double-hr" />
               </div>
             </div>
           </ParallaxLayer>
@@ -183,11 +204,36 @@ const Home = () => {
             }}
           >
             <div className="contact-card-outer">
-              <div className="contact-card" style={{position:"absolute",zIndex:"100",margin: "0", fontSize:"2rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-                <p style={{textDecoration:"underline"}}>Tess Coleman</p>
+              <div
+                className="contact-card"
+                style={{
+                  position: 'absolute',
+                  zIndex: '100',
+                  margin: '0',
+                  fontSize: '2rem',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  flexDirection: 'column',
+                }}
+              >
+                <p style={{ textDecoration: 'underline' }}>Tess Coleman</p>
                 <p style={{}}>Email: colem391@msu.edu</p>
-                <p style={{}}>Github: <a href="https://github.com/tesscoleman" target="_blank">tesscoleman</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/tess-c-786265165/" target="_blank">linkedin.com/in/tess-c-786265165</a></p>
+                <p style={{}}>
+                  Github:{' '}
+                  <a href="https://github.com/tesscoleman" target="_blank">
+                    tesscoleman
+                  </a>
+                </p>
+                <p>
+                  LinkedIn:{' '}
+                  <a
+                    href="https://www.linkedin.com/in/tess-c-786265165/"
+                    target="_blank"
+                  >
+                    linkedin.com/in/tess-c-786265165
+                  </a>
+                </p>
               </div>
             </div>
           </ParallaxLayer>
