@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
             <div className="project-card-image" style={{width: "auto", }}>
               <img
                 src={map[props.index].image}
-                style={{ maxWidth: props.index === 2 ? "400px" : "100%"}}
+                style={{ maxWidth: props.index === 2 ? "50%" : "100%"}}
               />
             </div>
             <div className="project-card-links">

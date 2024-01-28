@@ -40,9 +40,13 @@ function handleClick (index) {
   return (
     <div
       style={{
+        position: "relative",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'flex-start',
+        zIndex: '20',
+        flexWrap: 'wrap',
+        gap: "20px"
       }}
     >
       <animated.div className="project-container" style={{flex: 2}}>
@@ -90,7 +94,7 @@ function handleClick (index) {
       {transition((style, isOpen) => (
         <>
           {(isOpen && selected !== null) ? (
-            <animated.div style={{...style, flex: "3", maxHeight: "500px", width: "500px"}}>
+            <animated.div style={{...style, flex: "3", maxHeight: "500px", width: "500px", margin: "20px"}}>
               <ProjectCard index={selected} style={style}/>
             </animated.div>
           ) : null}

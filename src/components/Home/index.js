@@ -51,7 +51,7 @@ const Home = () => {
             <div className="landing-box-outer">
               <div className="landing-box" style={{}}>
                 <a
-                  style={{  }}
+                  style={{}}
                   onClick={() => scrollToPage(2)}
                   className="flat-button"
                 >
@@ -95,13 +95,11 @@ const Home = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer
+          {/* <ParallaxLayer
             offset={1}
             speed={0.5}
             style={{ display: 'flex', justifyContent: 'center', zIndex: 20 }}
-          >
-            <h1 style={{ fontSize: '6rem', marginTop: '4rem' }}>Projects</h1>
-          </ParallaxLayer>
+          ></ParallaxLayer> */}
           <ParallaxLayer
             offset={1}
             speed={0.5}
@@ -112,11 +110,17 @@ const Home = () => {
             }}
           >
             <div className="project-box-outer">
-              <div className="project-box" style={{}}></div>
+              <div className="project-box" style={{}}>
+                <div style={{margin:"10px"}}>
+                <h1 style={{ fontSize: '5vh', marginBottom: "4rem", marginTop: "0"}}>Projects</h1>
+                <Projects />
+                </div>
+
+              </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer
-            offset={1.2}
+          {/* <ParallaxLayer
+            offset={1.25}
             speed={0.6}
             style={{ display: 'flex', justifyContent: 'center', zIndex: 20 }}
           >
@@ -128,9 +132,9 @@ const Home = () => {
                 textAlign: 'center',
               }}
             >
-              <Projects />
+
             </div>
-          </ParallaxLayer>
+          </ParallaxLayer> */}
           <ParallaxLayer
             offset={2}
             speed={0.5}
