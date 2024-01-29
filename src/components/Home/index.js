@@ -1,31 +1,18 @@
-import { Link } from 'react-router-dom'
+
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
-import { useState, useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import noise from '../../assets/images/noise.png'
-import testText from '../../assets/images/test-text.png'
-import computer from '../../assets/images/computer-cropped.png'
-import star from '../../assets/images/star.png'
-import { animated, useSpring } from '@react-spring/web'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Projects from '../Projects'
 import NavBar from '../NavBar'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['T', 'E', 'S', 'S', ' ', 'C', 'O', 'L', 'E', 'M', 'A', 'N']
 
   const parallax = useRef(Parallax)
 
   const scrollToPage = (page) => {
     parallax.current.scrollTo(page)
   }
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
 
   return (
     <>
@@ -50,13 +37,13 @@ const Home = () => {
           >
             <div className="landing-box-outer">
               <div className="landing-box" style={{}}>
-                <a
+                <button
                   style={{}}
                   onClick={() => scrollToPage(2)}
                   className="flat-button"
                 >
                   CONTACT ME
-                </a>
+                </button>
                 <h1 className="heading-1">Tess Coleman</h1>
                 <h2>software developer •</h2>
                 <hr />
@@ -158,10 +145,10 @@ const Home = () => {
                 }}
               >
                 <p style={{ textDecoration: 'underline' }}>Tess Coleman</p>
-                <p style={{}}>Email: colem391@msu.edu</p>
+                <p style={{}}>Email: tesscoleman123@gmail.com</p>
                 <p style={{}}>
                   Github:{' '}
-                  <a href="https://github.com/tesscoleman" target="_blank">
+                  <a href="https://github.com/tesscoleman" target="_blank" rel="noreferrer">
                     tesscoleman
                   </a>
                 </p>
@@ -170,6 +157,7 @@ const Home = () => {
                   <a
                     href="https://www.linkedin.com/in/tess-c-786265165/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     linkedin.com/in/tess-c-786265165
                   </a>

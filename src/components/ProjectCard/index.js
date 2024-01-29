@@ -13,12 +13,18 @@ const ProjectCard = (props) => {
       image: michiganBryophytesImg,
       description:
         'A website I created to catalog the species of moss native to Michigan and data such as recorded occurrences, characterstics & more. Created using React, Typescript, MongoDB and Node.js.',
+      alt: 'Michigan Bryophytes website displaying occurrences of species of moss on a map of Michigan.',
     },
-    1: { image: miDiariesImg,
-    description:
-      'A web application and base mobile application created collaboratively within the CSE 498 Capstone Project for the MSU Department of Linguistics. I worked primarily on the front end of the web application using Angular and Typescript.' },
-    2: { image: libraryImg,
-      description: "A desktop application I created at my job at MSU's library to keep track of checked out Makerspace equipment. Created using Electron."}
+    1: {
+      image: miDiariesImg,
+      description:
+        'A web application and base mobile application created collaboratively within the CSE 498 Capstone Project for the MSU Department of Linguistics. I worked primarily on the front end of the web application using Angular and Typescript.',
+    },
+    2: {
+      image: libraryImg,
+      description:
+        "A desktop application I created at my job at MSU's library to keep track of checked out Makerspace equipment. Created using Electron.",
+    },
   }
 
   const transition = useTransition(props.index, {
@@ -36,33 +42,42 @@ const ProjectCard = (props) => {
     <>
       {transition((style, index) => (
         <>
-          <animated.div className="project-open" style={{...style}}>
-            <div className="project-card-image" style={{width: "auto", }}>
+          <animated.div className="project-open" style={{ ...style }}>
+            <div className="project-card-image" style={{ width: 'auto' }}>
               <img
                 src={map[props.index].image}
-                style={{ maxWidth: props.index === 2 ? "50%" : "100%"}}
+                style={{ maxWidth: props.index === 2 ? '50%' : '100%' }}
+                alt={map[props.index].alt || null}
               />
             </div>
             <div className="project-card-links">
-              <p className='description'>{map[props.index].description}</p>
+              <p className="description">{map[props.index].description}</p>
               <div className="links">
                 {props.index === 0 ? (
                   <>
                     <p className="link">
-                    <FontAwesomeIcon icon={faGlobe} style={{verticalAlign: "middle", margin: "6px"}}/>
+                      <FontAwesomeIcon
+                        icon={faGlobe}
+                        style={{ verticalAlign: 'middle', margin: '6px' }}
+                      />
                       <a
                         href="https://michigan-bryophytes.onrender.com/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         https://michigan-bryophytes.onrender.com/
-                      </a>
-                      {" "}(May be slow to load.)
+                      </a>{' '}
+                      (May be slow to load.)
                     </p>
                     <p className="link">
-                    <FontAwesomeIcon icon={faGithub} style={{verticalAlign: "middle",  margin: "6px"}}/>
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        style={{ verticalAlign: 'middle', margin: '6px' }}
+                      />
                       <a
                         href="https://github.com/tesscoleman/michigan-bryophytes"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         https://github.com/tesscoleman/michigan-bryophytes/
                       </a>
