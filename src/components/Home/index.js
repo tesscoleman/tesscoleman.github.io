@@ -58,7 +58,7 @@ const Home = () => {
                   <div className="languages-container">
                     <p className="languages-heading">LANGUAGES & FRAMEWORKS:</p>
                     <p className="languages-text">
-                      React, Typescript, Node.js, MongoDB, Angular, Java, C++,
+                      React, Typescript, CSS, Node.js, MongoDB, Angular, Java, C++,
                       SQL
                     </p>
                     {/* <hr /> */}
