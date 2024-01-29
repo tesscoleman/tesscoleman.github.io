@@ -293,6 +293,7 @@ $primary-color: #a7c957;
       border-bottom: double #000 12px;
       border-left: 3px solid #000;
       padding: 5rem 8rem;
+      text-align: center;
       &:before {
           position: absolute;
           left: 10px;
@@ -315,47 +316,6 @@ $primary-color: #a7c957;
     }
   }
 
-}
-
-
-.contents {
-  position: relative;
-  top: 0;
-  height: 700px;
-  width: 500px;
-  background-color: wheat;
-  display: inline-block;
-  opacity: 0;
-}
-
-.testText {
-  position: absolute;
-  width: 400px;
-  height: auto;
-  right: 0;
-}
-
-.computerImg {
-  z-index: 20;
-  position: relative;
-  display: inline;
-  width: 60px;
-  vertical-align: middle;
-  height: auto;
-  right: 0;
-  bottom: 0;
-  filter: sepia(100%) saturate(100%) brightness(70%) hue-rotate(10deg);
-  mix-blend-mode: hue;
-}
-
-.frame {
-  position: absolute;
-  z-index: 20;
-  left: 50%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  width: 900px;
-  height: 800px;
 }
 
 @media screen and (max-width: 1000px) {

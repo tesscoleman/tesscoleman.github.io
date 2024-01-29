@@ -98,7 +98,7 @@ const Home = () => {
           >
             <div className="project-box-outer">
               <div className="project-box" style={{}}>
-                <div style={{margin:"10px"}}>
+                <div style={{margin:"1rem 0 4rem"}}>
                 <h1 style={{ fontSize: '5vh', marginBottom: "4rem", marginTop: "0"}}>Projects</h1>
                 <Projects />
                 </div>
