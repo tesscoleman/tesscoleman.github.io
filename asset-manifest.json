@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aca5fbdd.css",
-    "main.js": "/static/js/main.3b482702.js",
+    "main.css": "/static/css/main.b5c2d0ee.css",
+    "main.js": "/static/js/main.3679cdd9.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/mi-diaries-page-2.png": "/static/media/mi-diaries-page-2.e9eb923c2897a044d124.png",
     "static/media/computer-cropped.png": "/static/media/computer-cropped.480f78f955c8adcdca77.png",
@@ -18,12 +18,12 @@
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/Auto Mission.woff2": "/static/media/Auto Mission.1e79c27a52066d59d2e0.woff2",
     "index.html": "/index.html",
-    "main.aca5fbdd.css.map": "/static/css/main.aca5fbdd.css.map",
-    "main.3b482702.js.map": "/static/js/main.3b482702.js.map",
+    "main.b5c2d0ee.css.map": "/static/css/main.b5c2d0ee.css.map",
+    "main.3679cdd9.js.map": "/static/js/main.3679cdd9.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aca5fbdd.css",
-    "static/js/main.3b482702.js"
+    "static/css/main.b5c2d0ee.css",
+    "static/js/main.3679cdd9.js"
   ]
 }
