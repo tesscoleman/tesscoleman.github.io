@@ -155,11 +155,11 @@ const Home = () => {
                 <p>
                   LinkedIn:{' '}
                   <a
-                    href="https://www.linkedin.com/in/tess-c-786265165/"
+                    href="https://www.linkedin.com/in/tesscoleman/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    linkedin.com/in/tess-c-786265165
+                    linkedin.com/in/tesscoleman/
                   </a>
                 </p>
               </div>
